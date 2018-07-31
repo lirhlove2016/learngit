@@ -1,0 +1,34 @@
+git学习
+1.安装
+2.git bath，输入git
+3.命令
+1)设置
+	$git config --global user.name "yourname"
+	$git config --global user.email "youremail"
+2)创建版本库
+	$mkdif learngit
+	$cd learngit
+	$pwd
+	$git init
+	创建一个readme.txt文件
+	$git add readme.txt
+	$git commit -m "message"
+3)查看
+	$git status 仓库当前的状态
+	$git diff readme.txt 查看difference
+4）版本回退
+	$git log 查看历史记录
+	#git log --pretty=oneline 一行显示log
+	$git reset --hard HEAD^   回退到上一个版本，^上一个版本，^^向上2个版本
+	$git log 查看历史记录
+	$git reset --hard 0123a 回退到那个commit号
+	$cat readme.txt 查看文件内容
+	$git reflog 记录使用的命令
+总结一下：
+    HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+
+    穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+    要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+	
