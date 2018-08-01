@@ -103,3 +103,6 @@ git log --graph --pretty=oneline --abbrev-commit
 git branch d-d feature1
 git log --graph命令可以看到分支合并图
 
+提交修改
+git remote add origin git@github/learngit.git
+git push -u origin master
